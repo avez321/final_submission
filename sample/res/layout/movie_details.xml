@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="invisible"
+    android:id="@+id/mainlayout"
+     android:background="#d3d3d3"
+    
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:layout_margin="8dp"
+        />
+
+    
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:padding="10dip"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        />
+    <LinearLayout
+       android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical" 
+        android:layout_margin="5dp"
+        >
+         <LinearLayout
+       android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+             <TextView
+                  android:id="@+id/txtTitle"
+                
+                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                 android:textColor="#000000"
+                 android:paddingLeft="2dp"
+                 android:text="title"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:background="@drawable/customedit" />
+
+    </LinearLayout>
+     <LinearLayout
+       android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+         <TextView
+             android:id="@+id/txtOverview"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="start"
+            android:textColor="#000000"
+              android:scrollbars="vertical"
+              android:paddingLeft="2dp"
+              android:lines="5"
+             android:textAppearance="?android:attr/textAppearanceMedium" 
+              android:background="@drawable/customedit" 
+             />
+
+    </LinearLayout>
+     <LinearLayout
+       android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" 
+         android:gravity="center"
+          android:background="@drawable/customedit" 
+         >
+
+         <RatingBar
+             android:id="@+id/ratingBar1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            
+             android:numStars="5"
+             android:isIndicator="true"
+             
+            android:focusable="false"
+             
+              />
+
+    </LinearLayout>
+        
+        
+
+    </LinearLayout>
+    
+</LinearLayout>
